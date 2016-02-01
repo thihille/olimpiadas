@@ -515,9 +515,16 @@ var startGame = {
 			$(".nadador3").addClass("anNad3");
 			$(".nadador4").addClass("anNad4");
 			$(".nadador5").addClass("anNad5");
+            setTimeout(function(){
+                $(".nadador1").removeClass("anNad1");
+                $(".nadador2").removeClass("anNad2");
+                $(".nadador3").removeClass("anNad3");
+                $(".nadador4").removeClass("anNad4");
+                $(".nadador5").removeClass("anNad5");
+            },1100);
 			var areaClique = { x: 0, y: 0 };
-			$(".premiar").draggable({});
-				/*start: function(ui , event){
+			$(".premiar").draggable({
+				start: function(ui , event){
 					areaClique.x = ui.clientX;
 			        areaClique.y = ui.clientY;
 				},				
@@ -528,15 +535,7 @@ var startGame = {
 			        };
 			    },
 			    revert: true
-			    // revert : function(event, ui) {
-		     //        $(this).data("uiDraggable").originalPosition = {
-		     //            top : '370px',
-		     //            left : '30px'
-		     //        };
-		     //        return !ui;
-		     //    },
-		     //    revertDuration: 500
-			});*/
+			});
 			// $(".premiar").draggable({revert:true});
 			$(".nada1").droppable({
 				drop:function(event,ui){
