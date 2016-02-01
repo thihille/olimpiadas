@@ -516,8 +516,8 @@ var startGame = {
 			$(".nadador4").addClass("anNad4");
 			$(".nadador5").addClass("anNad5");
 			var areaClique = { x: 0, y: 0 };
-			$(".premiar").draggable({
-				start: function(ui , event){
+			$(".premiar").draggable({});
+				/*start: function(ui , event){
 					areaClique.x = ui.clientX;
 			        areaClique.y = ui.clientY;
 				},				
@@ -536,7 +536,7 @@ var startGame = {
 		     //        return !ui;
 		     //    },
 		     //    revertDuration: 500
-			});
+			});*/
 			// $(".premiar").draggable({revert:true});
 			$(".nada1").droppable({
 				drop:function(event,ui){
