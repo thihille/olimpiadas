@@ -83,57 +83,6 @@ function textosInstrucoes(txtLvl){
 	});
 	
 	// Som de botões e falas em sprite
-	var textos = new Howl({
-		urls: [
-			path+'parte1.mp3',
-			path+'parte1.ogg',
-		],
-		sprite: {
-			loading: [0, 300],
-			text1: [500, 9500],
-			text2: [10400, 10000],
-			text3: [21500, 10000],
-			text4: [32500, 6000],
-			text5: [39500, 6000],
-			text6: [46000, 6400],
-			text7: [53500, 6200],
-		}
-	});
-	
-	// Som de botões e falas em sprite
-	var textos2 = new Howl({
-		urls: [
-			path+'parte2.mp3',
-			path+'parte2.ogg',
-		],
-		sprite: {
-			loading: [0, 300],
-			text1: [400, 10100],
-			text2: [11500, 16700],
-			text3: [29500, 10500], /* Titulo Nadadores */
-			text4: [41400, 10100],
-			text5: [41400, 10100],
-		}
-	});
-	
-	// Som de botões e falas em sprite
-	var textos3 = new Howl({
-		urls: [
-			path+'feedback.mp3',
-			path+'feedback.ogg',
-		],
-		sprite: {
-			loading: [0, 300],
-			text1: [31500, 5000],
-			text2: [5500, 8000],
-			text3: [400, 4200],
-			text4: [37500, 4500],
-			text5: [14500, 6800],
-			text6: [42500, 10000],
-			acerto: [52600, 400],
-			erro: [53600, 400],
-		}
-	});
 	
 	// Comando para desligar o som
 	var 

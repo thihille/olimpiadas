@@ -8,6 +8,59 @@ var audio_narracao_parabens_salto = new Howl({urls: ['media/audio/audio_narracao
 var audio_narracao_explica_natacao = new Howl({urls: ['media/audio/audio_narracao_explica_natacao.mp3'],volume: 1,onend: function() { audio_narracao_explica_natacao.volume(0);}});
 /**/
 
+	var textos = new Howl({
+		urls: [
+			'media/audio/parte1.mp3',
+			'media/audio/parte1.ogg',
+		],
+		sprite: {
+			loading: [0, 300],
+			text1: [500, 9500],
+			text2: [10400, 10000],
+			text3: [21500, 10000],
+			text4: [32500, 6000],
+			text5: [39500, 6000],
+			text6: [46000, 6400],
+			text7: [53500, 6200],
+		}
+	});
+	
+	// Som de botões e falas em sprite
+	var textos2 = new Howl({
+		urls: [
+			'media/audio/parte2.mp3',
+			'media/audio/parte2.ogg',
+		],
+		sprite: {
+			loading: [0, 300],
+			text1: [400, 10100],
+			text2: [11500, 16700],
+			text3: [29500, 10500], /* Titulo Nadadores */
+			text4: [41400, 10100],
+			text5: [41400, 10100],
+		}
+	});
+	
+	// Som de botões e falas em sprite
+	var textos3 = new Howl({
+		urls: [
+			'media/audio/feedback.mp3',
+			'media/audio/feedback.ogg',
+		],
+		sprite: {
+			loading: [0, 300],
+			text1: [31500, 5000],
+			text2: [5500, 8000],
+			text3: [400, 4200],
+			text4: [37500, 4500],
+			text5: [14500, 6800],
+			text6: [42500, 10000],
+			acerto: [52600, 400],
+			erro: [53600, 400],
+		}
+	});
+
+
 var opcao_escolha_franca;
 opcao_escolha_franca="nao";
 var verificar_inicio_cnd;
@@ -407,16 +460,6 @@ var startGame = {
 							
 							var areaClique = { x: 0, y: 0 };
 							$(".menu .corredor1").draggable({
-								start: function(ui , event){
-									areaClique.x = ui.clientX;
-							        areaClique.y = ui.clientY;
-								},				
-					            drag: function(event,ui){
-							        ui.position = {
-							            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
-							            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
-							        };
-							    },
 							    revert : function(event, ui) {
 						            $(this).data("uiDraggable").originalPosition = {
 						                top : '370px',
@@ -427,16 +470,6 @@ var startGame = {
 						        revertDuration: 500
 							});
 							$(".menu .corredor2").draggable({
-								start: function(ui , event){
-									areaClique.x = ui.clientX;
-							        areaClique.y = ui.clientY;
-								},				
-					            drag: function(event,ui){
-							        ui.position = {
-							            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
-							            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
-							        };
-							    },
 							     revert : function(event, ui) {
 						            $(this).data("uiDraggable").originalPosition = {
 						                top : '370px',
@@ -447,16 +480,6 @@ var startGame = {
 						        revertDuration: 500
 							});
 							$(".menu .corredor3").draggable({
-								start: function(ui , event){
-									areaClique.x = ui.clientX;
-							        areaClique.y = ui.clientY;
-								},				
-					            drag: function(event,ui){
-							        ui.position = {
-							            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
-							            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
-							        };
-							    },
 							     revert : function(event, ui) {
 						            $(this).data("uiDraggable").originalPosition = {
 						                top : '370px',
