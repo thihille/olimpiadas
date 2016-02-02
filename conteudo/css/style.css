@@ -2378,16 +2378,16 @@ animation-timing-function:linear;
 .nada1 {
 	width:146px;
 	height:517px;
-	top:63px;
-	left:44px;
+	top:40px;
+	left:14px;
 	background:url(../img/nadador1-ok.png) no-repeat 0 172px;
 	cursor:pointer;
 }
 .nada2 {
 	width:128px;
 	height:517px;
-	top:63px;
-	left:213px;
+	top:45px;
+	left:200px;
 	background:url(../img/nadador2-ok.png) no-repeat 0 213px;	
 	cursor:pointer;
 }
@@ -2395,24 +2395,24 @@ animation-timing-function:linear;
 	width:195px;
 	display: block;
 	height:517px;
-	top:63px;
-	left:334px;
+	top:47px;
+    left: 326px;
 	background:url(../img/nadador3-ok.png) no-repeat  34px 141px;	
 	cursor:pointer;
 }
 .nada4 {
 	width:147px;
 	height:517px;
-	top:63px;
-	left:520px;
+	top: 46px;
+    left: 532px;
 	background:url(../img/nadador4-ok.png) no-repeat 0 177px;	
 	cursor:pointer;
 }
 .nada5 {
 	width:118px;
 	height:517px;
-	top:63px;
-	left:695px;
+	top:47px;
+    left: 711px;
 	background:url(../img/nadador5-ok.png) no-repeat 0 168px;	
 	cursor:pointer;
 }
@@ -2421,7 +2421,7 @@ animation-timing-function:linear;
 	position:absolute;
 	width:88px;
 	height:158px;
-	top:63px;
+	top:0px;
 	left:68px;
 	background:url(../img/rel1.png) no-repeat;	
 }
@@ -2430,8 +2430,8 @@ animation-timing-function:linear;
 	position:absolute;
 	width:75px;
 	height:200px;
-	top:63px;
-	left:237px;
+	top:0px;
+	left:217px;
 	background:url(../img/rel2.png) no-repeat;	
 }
 .relogio3 {
@@ -2439,8 +2439,8 @@ animation-timing-function:linear;
 	position:absolute;
 	width:87px;
 	height:132px;
-	top:63px;
-	left:378px;
+	top:0px;
+	left:375px;
 	background:url(../img/rel3.png) no-repeat;	
 }
 .relogio4 {
@@ -2448,8 +2448,8 @@ animation-timing-function:linear;
 	position:absolute;
 	width:88px;
 	height:164px;
-	top:63px;
-	left:551px;
+	top:0px;
+	left:560px;
 	background:url(../img/rel4.png) no-repeat;	
 }
 .relogio5 {
@@ -2457,15 +2457,15 @@ animation-timing-function:linear;
 	position:absolute;
 	width:88px;
 	height:153px;
-	top:63px;
-	left:711px;
+	top:0px;
+	left:726px;
 	background:url(../img/rel5.png) no-repeat;	
 }
 #quadromedalhas{
 	display:none;
 	position:absolute;
-	top:83px;
-	right:5px;
+	top:39px;
+	right:0;
 	width:190px;
 	height:474px;
 	background:url(../img/quadroMedalhas.png) no-repeat;
