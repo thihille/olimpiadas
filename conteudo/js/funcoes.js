@@ -523,19 +523,7 @@ var startGame = {
                 $(".nadador5").removeClass("anNad5");
             },1100);
 			var areaClique = { x: 0, y: 0 };
-			$(".premiar").draggable({
-				start: function(ui , event){
-					areaClique.x = ui.clientX;
-			        areaClique.y = ui.clientY;
-				},				
-	            drag: function(event,ui){
-			        ui.position = {
-			            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
-			            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
-			        };
-			    },
-			    revert: true
-			});
+			
 			// $(".premiar").draggable({revert:true});
 			$(".nada1").droppable({
 				drop:function(event,ui){
@@ -702,3 +690,16 @@ var startGame = {
 	    }
 	  }, 1000);
 	}
+$(".premiar").draggable({
+				start: function(ui , event){
+					areaClique.x = ui.clientX;
+			        areaClique.y = ui.clientY;
+				},				
+	            drag: function(event,ui){
+			        ui.position = {
+			            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
+			            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
+			        };
+			    },
+			    revert: true
+			});
