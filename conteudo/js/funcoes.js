@@ -515,14 +515,9 @@ var startGame = {
 			$(".nadador3").addClass("anNad3");
 			$(".nadador4").addClass("anNad4");
 			$(".nadador5").addClass("anNad5");
-            setTimeout(function(){
-                $(".nadador1").removeClass("anNad1");
-                $(".nadador2").removeClass("anNad2");
-                $(".nadador3").removeClass("anNad3");
-                $(".nadador4").removeClass("anNad4");
-                $(".nadador5").removeClass("anNad5");
-            },1100);
-			var areaClique = { x: 0, y: 0 };
+            setInterval(function(){
+                $(".premiar").draggable({revert: true});
+            },1000);
 			
 			// $(".premiar").draggable({revert:true});
 			$(".nada1").droppable({
@@ -690,16 +685,3 @@ var startGame = {
 	    }
 	  }, 1000);
 	}
-$(".premiar").draggable({
-				start: function(ui , event){
-					areaClique.x = ui.clientX;
-			        areaClique.y = ui.clientY;
-				},				
-	            drag: function(event,ui){
-			        ui.position = {
-			            left: (event.clientX - areaClique.x + ui.originalPosition.left) / escalaElemento,
-			            top: (event.clientY - areaClique.y + ui.originalPosition.top) / escalaElemento
-			        };
-			    },
-			    revert: true
-			});
